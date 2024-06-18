@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#ffffff;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333333;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#weatherResult {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333333;
+    border-top: 1px solid #ccc; /* Linha superior para separação */
+    padding-top: 10px; /* Espaçamento superior */
+}
+
+#weatherResult p.location {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+#weatherResult p.description {
+    font-style: italic;
+    color: #666666;
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+#weatherResult p.temperature {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 10px; /* Espaçamento inferior */
+}
+
+#weatherResult p.temperature span {
+    font-weight: bold;
+    color: #007bff; /* Cor para valores de temperatura */
+}

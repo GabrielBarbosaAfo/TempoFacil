@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Tempo</title>
+</head>
+<body>
+    <div class="container">
+        <h1>TempoFácil</h1>
+        <form action="/search" method="POST" id="weatherForm">
+            <label for="cityInput">Digite sua cidade:</label>
+            <input type="text" id="cityInput" name="cityInput" placeholder="Digite o nome da cidade" required>
+        </form>
+        <% if(locals.lugar!=null){ %>
+            <div id="weatherResult">
+                <p class="location"><%= lugar.name %>, <%= lugar.sys.country %></p>
+                <p class="description"><%= lugar.weather[0].description %></p>
+                <p class="temperature">
+                    Temperatura: <span><%= lugar.main.temp %>°C</span>
+                </p>
+            </div>
+        <% } %>
+    </div>
+</body>
+</html>
